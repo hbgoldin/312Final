@@ -272,11 +272,17 @@ a {
   }
   .about p {
     font-family: Helvetica;
-    padding: 20px 0;
-    font-size: 18px;
+    padding: 40px;
+    font-size: 22px;
   }
   .about img {
-    width: 100%;
+    width: 50%;
+  }
+  .about .aboutinfo {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
   }
 }
 @media screen and (max-width: 600px) {
