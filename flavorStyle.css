@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+  .flavorContainer {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+  }
+  .flavorContainer .flavor {
+    border: 2px solid ;
+  }
+}
+/*# sourceMappingURL=flavorStyle.css.map */

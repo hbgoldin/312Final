@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 600px) {
+  .topnav {
+    display: none;
+  }
+  .bignav {
+    background-color: #F25270;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .bignav .header {
+    font-family: "Patua One";
+    font-size: 28px;
+    text-align: left;
+    margin-right: 30%;
+  }
+  .bignav .biglinks {
+    text-align: right;
+    font-family: Helvetica;
+  }
+  .bignav .biglinks :hover {
+    text-decoration: underline;
+  }
+  .bignav a {
+    color: white;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bignav {
+    display: none;
+  }
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #F25270;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #F25270;
+    position: relative;
+    font-family: "Patua One";
+  }
+  .topnav #myLinks {
+    display: none;
+    font-family: Helvetica;
+  }
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    border-top: 2px solid #ffffff;
+  }
+  .topnav a.icon {
+    background: #F25270;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+@media screen and (min-width: 600px) {
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    /* Caption text */
+  }
+  .mySlides img {
+    width: 100%;
+  }
+  .textBG {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 800px;
+    height: 290px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .textBG .text {
+    color: #F25270;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-family: Helvetica;
+  }
+  .textBG .text h1 {
+    font-size: 90px;
+    font-family: "Patua One";
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: white;
+    color: #F25270;
+  }
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+}
+@media screen and (max-width: 600px) {
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    /* Caption text */
+  }
+  .mySlides img {
+    width: 100%;
+  }
+  .textBG {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 210px;
+    height: 130px;
+    position: absolute;
+    display: block;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 20%;
+  }
+  .textBG .text {
+    color: #F25270;
+    font-size: 16px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-family: Helvetica;
+  }
+  .textBG .text h1 {
+    font-size: 28px;
+    font-family: "Patua One";
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    color: #F25270;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    margin-top: -50%;
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: white;
+    color: #F25270;
+  }
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+}
+@media screen and (min-width: 600px) {
+  .bigfoot {
+    background-color: #F25270;
+    width: 100%;
+    height: 20%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+  .bigfoot .social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  .bigfoot .social a {
+    padding: 10px 50px;
+    color: white;
+  }
+  .bigfoot p {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Helvetica;
+  }
+  .smallfoot {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bigfoot {
+    display: none;
+  }
+  .smallfoot {
+    background-color: #F25270;
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+  .smallfoot .social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100px;
+  }
+  .smallfoot .social a {
+    margin: 0 20px;
+    padding: 0;
+    color: white;
+  }
+  .smallfoot p {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+@media screen and (min-width: 600px) {
+  .about {
+    font-family: "Patua One";
+    padding: 0 10px;
+  }
+  .about h1 {
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    color: #F25270;
+    font-size: 38px;
+  }
+  .about p {
+    font-family: Helvetica;
+    padding: 20px 0;
+    font-size: 18px;
+  }
+  .about img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about {
+    font-family: "Patua One";
+    padding: 0 10px;
+  }
+  .about h1 {
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    color: #F25270;
+  }
+  .about p {
+    font-family: Helvetica;
+    padding: 20px 0;
+  }
+  .about img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .flavorContainer {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  .flavorContainer .flavor {
+    border: 2px solid #F25270;
+    padding: 10px;
+    width: 200px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  .flavorContainer .flavor img {
+    width: 80%;
+    padding: 10px;
+  }
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 360px;
+    background-color: #F25270;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    margin-left: 35%;
+    display: block;
+    top: 10px;
+  }
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1 ;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .flavorContainer {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .flavorContainer .flavor {
+    border: 2px solid #F25270;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .flavorContainer .flavor img {
+    width: 80%;
+    padding: 10px;
+  }
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #F25270;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -80px;
+  }
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1 ;
+    }
+  }
+}
+form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  margin-bottom: 10px;
+  font-family: Helvetica;
+}
+form input {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=style1.css.map */

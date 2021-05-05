@@ -1,0 +1,126 @@
+//desktop
+@media screen and (min-width: 600px ) {
+  .flavorContainer{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    .flavor{
+      border: 2px solid @brandPink;
+      padding: 10px;
+      width: 200px;
+      height: 300px;
+      margin-bottom: 20px;
+      img{
+        width: 80%;
+        padding: 10px;
+      }
+
+    }
+  }
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 360px;
+    background-color: @brandPink;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+margin-left: 35%;
+    display: block;
+top: 10px;
+  }
+
+
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+}
+
+
+
+//mobile
+@media screen and (max-width: 600px ) {
+.flavorContainer{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  .flavor{
+    border: 2px solid @brandPink;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    img{
+      width: 80%;
+      padding: 10px;
+    }
+
+  }
+}
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: @brandPink;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    //bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+
+  }
+
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+}
